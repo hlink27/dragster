@@ -1,0 +1,7 @@
+<resources>
+    <string translatable="false" name="app_name">Estudo</string>
+    <string name="loginUsername">Username</string>
+    <string name="loginPasswordHint">Password</string>
+    <string name="loginButton">Log In</string>
+    <string name="successLogIn">Welcome, </string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loginUsername">Nome de Usuário</string>
+    <string name="loginPasswordHint">Senha</string>
+    <string name="loginButton">Entrar</string>
+    <string name="successLogIn">Bem vindo, </string>
+</resources>
