@@ -4,4 +4,9 @@
     <string name="loginPasswordHint">Senha</string>
     <string name="loginButton">Entrar</string>
     <string name="successLogIn">Bem vindo, </string>
+    <string name="noLogInInput">Preencha os campos acima</string>
+    <string name="incorrectInput">Usuário ou senha incorretos</string>
+    <string name="errorInputLogin">Usuário inválido</string>
+    <string name="errorPasswordLogin">Senha inválida</string>
+    <string name="createAccount">Cirar Conta</string>
 </resources>

@@ -1,7 +1,12 @@
 <resources>
-    <string translatable="false" name="app_name">Estudo</string>
+    <string name="app_name" translatable="false">Estudo</string>
     <string name="loginUsername">Username</string>
     <string name="loginPasswordHint">Password</string>
     <string name="loginButton">Log In</string>
     <string name="successLogIn">Welcome, </string>
+    <string name="noLogInInput">Fill the fields above</string>
+    <string name="incorrectInput">Incorrect username or password</string>
+    <string name="errorInputLogin">Invalid username</string>
+    <string name="errorPasswordLogin">Invalid Password</string>
+    <string name="createAccount">Create Account</string>
 </resources>
