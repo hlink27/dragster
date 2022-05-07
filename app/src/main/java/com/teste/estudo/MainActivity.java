@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean check = checkInput();
-                if (check) {
+                if (checkInput()) {
                     String loginUsername = username.getText().toString();
                     String loginPassword = password.getText().toString();
                     if (loginUsername.equals("admin") && loginPassword.equals("admin")) {

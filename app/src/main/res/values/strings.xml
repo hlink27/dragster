@@ -18,5 +18,9 @@
     <string name="createPassword">Create Password</string>
     <string name="confirmPassword">Confirm Password</string>
     <string name="btnCreateAccount">Create</string>
+    <string name="usernameError">Username too short</string>
+    <string name="emailError">Invalid E-mail</string>
+    <string name="passwordError">Password too short</string>
+    <string name="passwordNoMatch">Passwords does not match</string>
 
 </resources>

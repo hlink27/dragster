@@ -15,4 +15,8 @@
     <string name="createPassword">Criar Senha</string>
     <string name="confirmPassword">Confirmar Senha</string>
     <string name="btnCreateAccount">Criar</string>
+    <string name="usernameError">Nome muito curto</string>
+    <string name="emailError">E-mail inválido</string>
+    <string name="passwordError">Senha muito curta</string>
+    <string name="passwordNoMatch">Senhas não coincidem</string>
 </resources>
