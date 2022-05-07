@@ -9,4 +9,10 @@
     <string name="errorInputLogin">Usuário inválido</string>
     <string name="errorPasswordLogin">Senha inválida</string>
     <string name="createAccount">Cirar Conta</string>
+
+    <string name="createAccountTitle">Criar Conta</string>
+    <string name="loginEmail">E-mail</string>
+    <string name="createPassword">Criar Senha</string>
+    <string name="confirmPassword">Confirmar Senha</string>
+    <string name="btnCreateAccount">Criar</string>
 </resources>

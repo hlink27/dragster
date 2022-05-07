@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Estudo</string>
+
+    <!--Login-->
     <string name="loginUsername">Username</string>
     <string name="loginPasswordHint">Password</string>
     <string name="loginButton">Log In</string>
@@ -9,4 +11,12 @@
     <string name="errorInputLogin">Invalid username</string>
     <string name="errorPasswordLogin">Invalid Password</string>
     <string name="createAccount">Create Account</string>
+
+    <!--Create Account-->
+    <string name="createAccountTitle">Create Account</string>
+    <string name="loginEmail">E-mail</string>
+    <string name="createPassword">Create Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="btnCreateAccount">Create</string>
+
 </resources>

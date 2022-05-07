@@ -7,15 +7,31 @@
     tools:context=".MainActivity"
     android:background="@drawable/main_background">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="282dp"
-        android:layout_height="460dp"
+    <TextView
+        android:id="@+id/txtCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/createAccount"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="282dp"
+        android:layout_height="460dp"
         app:cardBackgroundColor="@color/black_low_opacity"
-        app:cardCornerRadius="25dp">
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -36,7 +52,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:backgroundTint="#FFFFFFFF"
+                android:backgroundTint="@color/white"
+                android:clickable="false"
                 android:drawableLeft="@drawable/ic_user"
                 android:ems="10"
                 android:hint="@string/loginUsername"
