@@ -22,5 +22,6 @@
     <string name="emailError">Invalid E-mail</string>
     <string name="passwordError">Password too short</string>
     <string name="passwordNoMatch">Passwords does not match</string>
+    <string name="accountCreated">Account Created!</string>
 
 </resources>

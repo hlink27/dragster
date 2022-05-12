@@ -19,4 +19,5 @@
     <string name="emailError">E-mail inválido</string>
     <string name="passwordError">Senha muito curta</string>
     <string name="passwordNoMatch">Senhas não coincidem</string>
+    <string name="accountCreated">Conta Criada!</string>
 </resources>
