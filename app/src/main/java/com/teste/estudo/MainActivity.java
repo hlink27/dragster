@@ -1,6 +1,7 @@
 package com.teste.estudo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -11,10 +12,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.teste.estudo.DAO.UserDAO;
+import com.teste.estudo.entidades.User;
+import com.teste.estudo.utils.BancoDeDados;
+
 public class MainActivity extends AppCompatActivity {
     EditText username, password;
     Button btnLogin;
     TextView crtAccount;
+    BancoDeDados banco;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checkInput()) {
                     String loginUsername = username.getText().toString();
                     String loginPassword = password.getText().toString();
-                    if (loginUsername.equals("admin") && loginPassword.equals("admin")) {
+                    if (login(loginUsername, loginPassword)) {
                         Toast.makeText(MainActivity.this, getText(R.string.successLogIn) + loginUsername, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, MainMenu.class);
                         startActivity(intent);
@@ -69,5 +75,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return true;
         }
+    }
+    public boolean login(String username, String password){
+        banco = Room.databaseBuilder(getApplicationContext(), BancoDeDados.class,"BancoTeste").allowMainThreadQueries().build();
+        UserDAO userDAO = banco.userDAO();
+        User[] users = userDAO.validateLogin(username, password);
+        if(users.length == 0)return false;
+        return true;
     }
 }

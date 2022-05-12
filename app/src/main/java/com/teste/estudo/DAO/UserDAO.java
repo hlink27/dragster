@@ -12,5 +12,6 @@ public interface UserDAO {
     @Insert
     List<Long> insertAll(User... users);
 
-
+    @Query("SELECT * FROM user WHERE nome = :username AND senha = :password")
+    public User[] validateLogin(String username, String password);
 }
