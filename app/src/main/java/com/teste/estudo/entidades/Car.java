@@ -2,16 +2,16 @@ package com.teste.estudo.entidades;
 
 import androidx.room.*;
 
-@Entity(tableName = "user")
-public class User {
+@Entity(tableName = "car")
+public class Car {
     @PrimaryKey(autoGenerate = true)
     public int id;
     @ColumnInfo
-    public String nome;
+    public String placa;
     @ColumnInfo
-    public String email;
+    public String marca;
     @ColumnInfo
-    public String senha;
+    public String modelo;
     @ColumnInfo
-    public boolean admin;
+    public String id_dono;
 }

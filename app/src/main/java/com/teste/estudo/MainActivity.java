@@ -17,7 +17,8 @@ import com.teste.estudo.entidades.User;
 import com.teste.estudo.utils.BancoDeDados;
 
 public class MainActivity extends AppCompatActivity {
-    EditText username, password;
+    public EditText username;
+    EditText password;
     Button btnLogin;
     TextView crtAccount;
     BancoDeDados banco;
@@ -42,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                     String loginUsername = username.getText().toString();
                     String loginPassword = password.getText().toString();
                     if (login(loginUsername, loginPassword)) {
-                        Toast.makeText(MainActivity.this, getText(R.string.successLogIn) + loginUsername, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, MainMenu.class);
                         startActivity(intent);
                     } else {

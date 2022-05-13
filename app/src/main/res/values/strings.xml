@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Estudo</string>
+    <string name="app_name" translatable="false">Dragster</string>
 
     <!--Login-->
     <string name="loginUsername">Username</string>
@@ -24,4 +24,11 @@
     <string name="passwordNoMatch">Passwords does not match</string>
     <string name="accountCreated">Account Created!</string>
 
+    <!--Main Menu-->
+    <string name="scheduleRepair">Schedule Repair</string>
+    <string name="vehicle">Vehicles</string>
+    <string name="contactUS">Contact Us</string>
+    <string name="stamps">My Stamps</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="config">Administration</string>
 </resources>

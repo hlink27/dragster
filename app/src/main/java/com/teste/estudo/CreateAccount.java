@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.*;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -51,13 +52,15 @@ public class CreateAccount extends AppCompatActivity {
                     if(isValidEmail(e_mail)){
                         if(isValidPassword(pass_word)){
                             if(pass_word.equals(pass_word2)){
-                                Toast.makeText(CreateAccount.this, getText(R.string.accountCreated), Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(CreateAccount.this, getText(R.string.accountCreated), Toast.LENGTH_SHORT).show();
                                 User user1 = new User();
                                 user1.nome = user_name;
                                 user1.email = e_mail;
                                 user1.senha = pass_word;
                                 UserDAO userDAO = banco.userDAO();
                                 userDAO.insertAll(user1);
+                                Intent intent = new Intent(CreateAccount.this, MainActivity.class);
+                                startActivity(intent);
                             } else {
                                 confirmPassword.setError(getText(R.string.passwordNoMatch));
                             }
@@ -85,6 +88,6 @@ public class CreateAccount extends AppCompatActivity {
         return(!(target.length() < 3));
     }
     public static boolean isValidPassword(String target) {
-        return(!(target.length() < 6));
+        return(!(target.length() < 4));
     }
 }
