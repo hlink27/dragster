@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewCar"
             android:exported="false" />
         <activity
@@ -18,11 +21,14 @@
         <activity
             android:name=".MainMenu"
             android:exported="false">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".MainActivity"

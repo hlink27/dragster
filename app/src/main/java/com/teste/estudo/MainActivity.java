@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         crtAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     //Validation
     private boolean checkInput() {
         if (username.length() < 3) {
