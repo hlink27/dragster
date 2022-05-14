@@ -32,7 +32,7 @@ public class MainMenu extends AppCompatActivity {
         profileBtn = (Button) findViewById(R.id.profileButton);
         admBtn = (Button) findViewById(R.id.adminButton);
         username = (EditText) findViewById(R.id.username);
-        String lgnUsername = username.getText().toString();
+        String lgnUsername2 = username.getText().toString();
 
         repairBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,12 @@ public class MainMenu extends AppCompatActivity {
         admBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+              // if (validateAdmin())
+                /*Intent intent = new Intent(MainMenu.this,MainAdminConfig.class);
+                    startActivity(intent);*/
+
             }
+
         });
 
         /*public boolean isAdm(String lgnUsername){
@@ -65,5 +70,6 @@ public class MainMenu extends AppCompatActivity {
                 return true;
             }
         }*/
+       // public boolean admin( String username){}
     }
 }

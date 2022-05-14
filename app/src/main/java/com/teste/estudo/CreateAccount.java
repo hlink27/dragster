@@ -59,8 +59,8 @@ public class CreateAccount extends AppCompatActivity {
                                 user1.senha = pass_word;
                                 UserDAO userDAO = banco.userDAO();
                                 userDAO.insertAll(user1);
-                                Intent intent = new Intent(CreateAccount.this, MainActivity.class);
-                                startActivity(intent);
+                                //Intent intent = new Intent(CreateAccount.this, MainActivity.class);
+                                //startActivity(intent);
                             } else {
                                 confirmPassword.setError(getText(R.string.passwordNoMatch));
                             }

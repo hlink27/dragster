@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".MainAdminConfig"
+            android:exported="false" />
+        <activity
             android:name=".ContactActivity"
             android:exported="false" />
         <activity
