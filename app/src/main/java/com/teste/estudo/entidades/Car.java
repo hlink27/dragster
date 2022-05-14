@@ -13,5 +13,7 @@ public class Car {
     @ColumnInfo
     public String modelo;
     @ColumnInfo
+    public int ano;
+    @ColumnInfo
     public String id_dono;
 }
