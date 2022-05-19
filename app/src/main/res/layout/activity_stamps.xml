@@ -4,6 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StampsActivity">
+    tools:context=".StampsActivity"
+    android:background="@drawable/main_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStamps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="9"
+            tools:listitem="@layout/list_stamp" />
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
