@@ -30,7 +30,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/dragster_logo_border" />
+                android:src="@drawable/dragster_logo_border" />
 
             <TextView
                 android:id="@+id/textView"
@@ -62,7 +62,7 @@
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:clickable="true"
-                    tools:src="@drawable/whatsapp" />
+                    android:src="@drawable/whatsapp" />
 
                 <ImageView
                     android:id="@+id/imgGoogleMaps"
@@ -70,7 +70,7 @@
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:clickable="true"
-                    tools:src="@drawable/google_maps" />
+                    android:src="@drawable/google_maps" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
