@@ -33,4 +33,9 @@
     <string name="editProfile">Edit Profile</string>
     <string name="config">Administration</string>
 
+    <!--Schedule-->
+    <string name="dateSelect">Select Date</string>
+    <string name="hourSelect">Select Time</string>
+    <string name="scheduleTextHint">Describe your vehicle\'s problem</string>
+
 </resources>

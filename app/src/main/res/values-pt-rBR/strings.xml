@@ -28,4 +28,8 @@
     <string name="stamps">Meus Selos</string>
     <string name="editProfile">Editar Perfil</string>
     <string name="config">Administração</string>
+
+    <string name="dateSelect">Selecione a Data</string>
+    <string name="hourSelect">Selecione a Hora</string>
+    <string name="scheduleTextHint">Descreva o problema do seu veículo</string>
 </resources>

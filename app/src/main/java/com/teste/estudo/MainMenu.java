@@ -38,7 +38,8 @@ public class MainMenu extends AppCompatActivity {
         repairBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainMenu.this, ScheduleActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -50,17 +51,6 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        admBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              // if (validateAdmin())
-                /*Intent intent = new Intent(MainMenu.this,MainAdminConfig.class);
-                    startActivity(intent);*/
-
-            }
-
-        });
-
         contactBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +58,34 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        stampBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, StampsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, EditActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        admBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              // if (validateAdmin())
+                /*Intent intent = new Intent(MainMenu.this,MainAdminConfig.class);
+                    startActivity(intent);*/
+            }
+        });
+
+
+
 
         /*public boolean isAdm(String lgnUsername){
             banco = Room.databaseBuilder(getApplicationContext(), BancoDeDados.class,"BancoTeste").allowMainThreadQueries().build();

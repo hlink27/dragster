@@ -28,7 +28,7 @@ public class ContactActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://api.whatsapp.com/send?phone=557132762177&text=Ol%C3%A1!"));
+                intent.setData(Uri.parse("https://api.whatsapp.com/send?phone=557191577883&text=Ol%C3%A1!"));
                 startActivity(intent);
             }
         });

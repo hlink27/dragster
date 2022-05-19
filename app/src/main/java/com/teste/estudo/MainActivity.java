@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Disable Landscape Mode
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Disable Landscape Mode
 
         //Find screen views
         username = (EditText) findViewById(R.id.username);
@@ -45,7 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 banco = Room.databaseBuilder(getApplicationContext(),BancoDeDados.class,"BancoTeste").allowMainThreadQueries().build();
                 User user1 = new User();
                 user1.nome = "admin";
+                user1.email = "admin@gmail.com";
                 user1.senha = "admin";
+                user1.stamps = 0;
+                user1.admin = true;
                 UserDAO userDAO = banco.userDAO();
                 userDAO.insertAll(user1);
                 Toast.makeText(MainActivity.this, "admin criado", Toast.LENGTH_SHORT).show();
