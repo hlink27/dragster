@@ -8,6 +8,7 @@
     tools:context=".MainMenu">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,10 +27,10 @@
                 android:id="@+id/repairButton"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/clock"
                 android:layout_margin="10dp"
-                android:textSize="12dp"
-                android:text="@string/scheduleRepair" />
+                android:drawableTop="@drawable/clock"
+                android:text="@string/scheduleRepair"
+                android:textSize="12dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,11 +52,11 @@
                     android:id="@+id/contacButton"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/contact"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:textSize="11dp"
-                    android:text="@string/contactUS" />
+                    android:drawableTop="@drawable/contact"
+                    android:text="@string/contactUS"
+                    android:textSize="11dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -68,21 +69,21 @@
                     android:id="@+id/stampButton"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/star"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:textSize="11dp"
-                    android:text="@string/stamps" />
+                    android:drawableTop="@drawable/star"
+                    android:text="@string/stamps"
+                    android:textSize="11dp" />
 
                 <Button
                     android:id="@+id/profileButton"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/person"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:textSize="11dp"
-                    android:text="@string/editProfile" />
+                    android:drawableTop="@drawable/person"
+                    android:text="@string/editProfile"
+                    android:textSize="11dp" />
 
             </LinearLayout>
 
@@ -90,22 +91,25 @@
                 android:id="@+id/adminButton"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/config"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:textSize="11dp"
-                android:text="@string/config" />
+                android:drawableTop="@drawable/config"
+                android:text="@string/config"
+                android:textSize="11dp" />
         </LinearLayout>
 
     </ScrollView>
 
     <TextView
-        android:id="@+id/username2"
+        android:id="@+id/usernameShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="54dp" />
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

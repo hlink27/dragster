@@ -17,8 +17,8 @@ import com.teste.estudo.entidades.User;
 import com.teste.estudo.utils.BancoDeDados;
 
 public class MainActivity extends AppCompatActivity {
-    public EditText username;
-    EditText password;
+    EditText username, password;
+    TextView usernameShow;
     Button btnLogin;
     TextView crtAccount;
     BancoDeDados banco;
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find screen views
         username = (EditText) findViewById(R.id.username);
+        usernameShow = (TextView) findViewById(R.id.usernameShow);
         password = (EditText) findViewById(R.id.password);
         crtAccount = (TextView) findViewById(R.id.txtCreateAccount);
         btnLogin = (Button) findViewById(R.id.btnLogIn);
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     String loginUsername = username.getText().toString();
                     String loginPassword = password.getText().toString();
                     if (login(loginUsername, loginPassword)) {
+                        //usernameShow.setText(loginUsername);
                         Intent intent = new Intent(MainActivity.this, MainMenu.class);
                         startActivity(intent);
                     } else {

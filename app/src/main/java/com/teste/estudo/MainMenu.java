@@ -3,12 +3,14 @@ package com.teste.estudo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.teste.estudo.DAO.UserDAO;
 import com.teste.estudo.entidades.User;
@@ -17,6 +19,7 @@ import com.teste.estudo.utils.BancoDeDados;
 public class MainMenu extends AppCompatActivity {
     Button repairBtn, vehicleBtn, contactBtn, stampBtn, profileBtn, admBtn;
     EditText username;
+    TextView usernameShow;
     BancoDeDados banco;
 
     @Override
@@ -31,8 +34,6 @@ public class MainMenu extends AppCompatActivity {
         stampBtn = (Button) findViewById(R.id.stampButton);
         profileBtn = (Button) findViewById(R.id.profileButton);
         admBtn = (Button) findViewById(R.id.adminButton);
-        username = (EditText) findViewById(R.id.username);
-        String lgnUsername2 = username.getText().toString();
 
         repairBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,14 @@ public class MainMenu extends AppCompatActivity {
 
             }
 
+        });
+
+        contactBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, ContactActivity.class);
+                startActivity(intent);
+            }
         });
 
         /*public boolean isAdm(String lgnUsername){

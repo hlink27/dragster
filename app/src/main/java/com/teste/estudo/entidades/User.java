@@ -13,5 +13,7 @@ public class User {
     @ColumnInfo
     public String senha;
     @ColumnInfo
+    public int stamps;
+    @ColumnInfo
     public boolean admin;
 }
