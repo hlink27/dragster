@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username, password;
     TextView usernameShow;
     Button btnLogin;
-    TextView crtAccount;
+    TextView crtAccount, textViewAdmin;
     BancoDeDados banco;
 
     @Override
@@ -35,6 +35,22 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
         crtAccount = (TextView) findViewById(R.id.txtCreateAccount);
         btnLogin = (Button) findViewById(R.id.btnLogIn);
+        textViewAdmin = (TextView) findViewById(R.id.textViewAdmin);
+
+        textViewAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Start Admin user
+                //REMOVER APÓS PROTÓTIPO APRESENTADO
+                banco = Room.databaseBuilder(getApplicationContext(),BancoDeDados.class,"BancoTeste").allowMainThreadQueries().build();
+                User user1 = new User();
+                user1.nome = "admin";
+                user1.senha = "admin";
+                UserDAO userDAO = banco.userDAO();
+                userDAO.insertAll(user1);
+                Toast.makeText(MainActivity.this, "admin criado", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         //Login Button
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -83,4 +99,6 @@ public class MainActivity extends AppCompatActivity {
         if(users.length == 0)return false;
         return true;
     }
+
+
 }
