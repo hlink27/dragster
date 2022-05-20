@@ -16,4 +16,14 @@ public class User {
     public int stamps;
     @ColumnInfo
     public boolean admin;
+    @ColumnInfo
+    public TipoUser tipoUser;
+
+    public enum TipoUser{
+        ADMIN(0), NORMAL(1), FIDELIZADO(2);
+        private int valor;
+        private TipoUser(int valor){
+            this.valor = valor;
+        }
+    }
 }

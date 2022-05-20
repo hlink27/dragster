@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.teste.estudo.DAO.UserDAO;
 import com.teste.estudo.entidades.User;
 import com.teste.estudo.utils.BancoDeDados;
+import com.teste.estudo.utils.Sessao;
 
 public class MainActivity extends AppCompatActivity {
     EditText username, password;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 user1.email = "admin@gmail.com";
                 user1.senha = "admin";
                 user1.stamps = 0;
-                user1.admin = true;
+                user1.tipoUser = User.TipoUser.ADMIN;
                 UserDAO userDAO = banco.userDAO();
                 userDAO.insertAll(user1);
                 Toast.makeText(MainActivity.this, "admin criado", Toast.LENGTH_SHORT).show();
@@ -100,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         UserDAO userDAO = banco.userDAO();
         User[] users = userDAO.validateLogin(username, password);
         if(users.length == 0)return false;
+        //salva na sessao o usuario logado
+        Sessao.getInstance().setUserLogado(users[0]);
         return true;
     }
 

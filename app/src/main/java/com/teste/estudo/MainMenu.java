@@ -11,15 +11,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.teste.estudo.DAO.UserDAO;
 import com.teste.estudo.entidades.User;
 import com.teste.estudo.utils.BancoDeDados;
+import com.teste.estudo.utils.Sessao;
 
 public class MainMenu extends AppCompatActivity {
     Button repairBtn, vehicleBtn, contactBtn, stampBtn, profileBtn, admBtn;
     EditText username;
-    TextView usernameShow;
+    TextView usernameShow, accShow;
     BancoDeDados banco;
 
     @Override
@@ -28,12 +30,22 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Disable Landscape Mode
 
+
         repairBtn = (Button) findViewById(R.id.repairButton);
         vehicleBtn = (Button) findViewById(R.id.vehicleButton);
         contactBtn = (Button) findViewById(R.id.contacButton);
         stampBtn = (Button) findViewById(R.id.stampButton);
         profileBtn = (Button) findViewById(R.id.profileButton);
         admBtn = (Button) findViewById(R.id.adminButton);
+        usernameShow = findViewById(R.id.usernameShow);
+        accShow = findViewById(R.id.accShow);
+
+        usernameShow.setText("Bem vindo, " + Sessao.getInstance().getUserLogado().nome);
+        accShow.setText("Tipo da Conta: " + Sessao.getInstance().getUserLogado().tipoUser);
+
+        if(Sessao.getInstance().getUserLogado().tipoUser == User.TipoUser.FIDELIZADO){
+            stampBtn.setEnabled(false); //Desabilita o botão caso usuário for fidelizado
+        }
 
         repairBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -100,16 +100,36 @@
 
     </ScrollView>
 
-    <TextView
-        android:id="@+id/usernameShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textColor="@color/white"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/black_low_opacity">
+
+        <TextView
+            android:id="@+id/usernameShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/accShow"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center|right"
+            android:text="Account"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"/>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
