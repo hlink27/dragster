@@ -57,6 +57,8 @@ public class CreateAccount extends AppCompatActivity {
                                 user1.nome = user_name;
                                 user1.email = e_mail;
                                 user1.senha = pass_word;
+                                user1.stamps = 0;
+                                user1.tipoUser = User.TipoUser.NORMAL;
                                 UserDAO userDAO = banco.userDAO();
                                 userDAO.insertAll(user1);
                                 finish();
