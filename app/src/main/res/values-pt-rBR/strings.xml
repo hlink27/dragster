@@ -22,6 +22,8 @@
     <string name="accountCreated">Conta Criada!</string>
 
     <!--Main Menu-->
+    <string name="welcome">Bem vindo(a),  </string>
+    <string name="accType">Tipo da Conta: </string>
     <string name="scheduleRepair">Agendar Reparo</string>
     <string name="vehicle">Veículos</string>
     <string name="contactUS">Contato</string>

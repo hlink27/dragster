@@ -26,6 +26,8 @@
     <string name="accountCreated">Account Created!</string>
 
     <!--Main Menu-->
+    <string name="welcome">Welcome, </string>
+    <string name="accType">Account Type: </string>
     <string name="scheduleRepair">Schedule Repair</string>
     <string name="vehicle">Vehicles</string>
     <string name="contactUS">Contact Us</string>

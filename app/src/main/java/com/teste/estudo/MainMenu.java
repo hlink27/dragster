@@ -20,7 +20,6 @@ import com.teste.estudo.utils.Sessao;
 
 public class MainMenu extends AppCompatActivity {
     Button repairBtn, vehicleBtn, contactBtn, stampBtn, profileBtn, admBtn;
-    EditText username;
     TextView usernameShow, accShow;
     BancoDeDados banco;
 
@@ -40,11 +39,14 @@ public class MainMenu extends AppCompatActivity {
         usernameShow = findViewById(R.id.usernameShow);
         accShow = findViewById(R.id.accShow);
 
-        usernameShow.setText("Bem vindo, " + Sessao.getInstance().getUserLogado().nome);
-        accShow.setText("Tipo da Conta: " + Sessao.getInstance().getUserLogado().tipoUser);
+        usernameShow.setText(getText(R.string.welcome) + " " + Sessao.getInstance().getUserLogado().nome);
+        accShow.setText("" + Sessao.getInstance().getUserLogado().tipoUser);
 
         if(Sessao.getInstance().getUserLogado().tipoUser == User.TipoUser.FIDELIZADO){
             stampBtn.setEnabled(false); //Desabilita o botão caso usuário for fidelizado
+        }
+        if(Sessao.getInstance().getUserLogado().tipoUser != User.TipoUser.ADMIN){
+            admBtn.setEnabled(false);
         }
 
         repairBtn.setOnClickListener(new View.OnClickListener() {

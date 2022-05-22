@@ -52,13 +52,14 @@ public class CreateAccount extends AppCompatActivity {
                     if(isValidEmail(e_mail)){
                         if(isValidPassword(pass_word)){
                             if(pass_word.equals(pass_word2)){
-                                Toast.makeText(CreateAccount.this, getText(R.string.accountCreated), Toast.LENGTH_SHORT).show();
                                 User user1 = new User();
                                 user1.nome = user_name;
                                 user1.email = e_mail;
                                 user1.senha = pass_word;
+                                user1.tipoUser = User.TipoUser.NORMAL;
                                 UserDAO userDAO = banco.userDAO();
                                 userDAO.insertAll(user1);
+                                Toast.makeText(CreateAccount.this, getText(R.string.accountCreated), Toast.LENGTH_SHORT).show();
                                 finish();
                             } else {
                                 confirmPassword.setError(getText(R.string.passwordNoMatch));
