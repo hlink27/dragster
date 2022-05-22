@@ -92,9 +92,8 @@ public class MainMenu extends AppCompatActivity {
         admBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              // if (validateAdmin())
-                /*Intent intent = new Intent(MainMenu.this,MainAdminConfig.class);
-                    startActivity(intent);*/
+                Intent intent = new Intent(MainMenu.this,AdminMenu.class);
+                startActivity(intent);
             }
         });
 

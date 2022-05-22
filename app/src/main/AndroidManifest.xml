@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".AdminCreateAcc"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenu"
+            android:exported="false" />
+        <activity
             android:name=".ScheduleActivity"
             android:exported="false" />
         <activity

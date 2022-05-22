@@ -40,4 +40,17 @@
     <string name="hourSelect">Select Time</string>
     <string name="scheduleTextHint">Describe your vehicle\'s problem</string>
 
+    <!--ADM Menu-->
+    <string name="admCreateAcc">Creacte Account</string>
+    <!--Spinner-->
+    <string-array name="tipoUser">
+        <item>NORMAL</item>
+        <item>FIDELIZADO</item>
+        <item>ADMIN</item>
+    </string-array>
+    <!--End Spinner-->
+    <string name="admEditAcc">Edit Account</string>
+    <string name="vehicleAdd">Add Vehicle</string>
+    <string name="vehicleEdit">Edit Vehicle</string>
+    <string name="seeRepair">View Schedule</string>
 </resources>

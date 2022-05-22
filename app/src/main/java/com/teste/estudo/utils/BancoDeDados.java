@@ -8,7 +8,7 @@ import com.teste.estudo.DAO.UserDAO;
 import com.teste.estudo.entidades.Car;
 import com.teste.estudo.entidades.User;
 
-@Database(entities = {User.class, Car.class}, version= 3)
+@Database(entities = {User.class, Car.class}, version= 4)
 public abstract class BancoDeDados extends RoomDatabase {
     public abstract UserDAO userDAO();
     public abstract CarDAO carDAO();

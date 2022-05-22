@@ -34,4 +34,11 @@
     <string name="dateSelect">Selecione a Data</string>
     <string name="hourSelect">Selecione a Hora</string>
     <string name="scheduleTextHint">Descreva o problema do seu veículo</string>
+
+    <!--ADM Menu-->
+    <string name="admCreateAcc">Criar Conta</string>
+    <string name="admEditAcc">Editar Contat</string>
+    <string name="vehicleAdd">Adicionar Veículo</string>
+    <string name="vehicleEdit">Editar Veículo</string>
+    <string name="seeRepair">Ver Agendamentos</string>
 </resources>
