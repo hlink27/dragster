@@ -25,8 +25,10 @@
         <entry key="app/src/main/res/layout/activity_schedule.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_stamps.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_view_car.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/color_spinner_layout.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/list_stamp.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/simple_spinner_layout.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/spinner_dropsown_layout.xml" value="0.35833333333333334" />
       </map>
     </option>
   </component>

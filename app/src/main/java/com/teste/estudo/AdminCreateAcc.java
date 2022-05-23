@@ -42,8 +42,8 @@ public class AdminCreateAcc extends AppCompatActivity implements AdapterView.OnI
         btnCreate = (Button) findViewById(R.id.btnCreateAdmin);
 
         Spinner spinner = findViewById(R.id.spinnerCrt);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tipoUser, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tipoUser, R.layout.color_spinner_layout);
+        adapter.setDropDownViewResource(R.layout.spinner_dropsown_layout);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
