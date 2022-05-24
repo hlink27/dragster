@@ -53,4 +53,21 @@
     <string name="vehicleAdd">Add Vehicle</string>
     <string name="vehicleEdit">Edit Vehicle</string>
     <string name="seeRepair">View Schedule</string>
+    <!--Create Car-->
+    <string name="crtCar">Register Vehicle</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="licensePlate">License Plate</string>
+    <string name="carCreated">Vehicle Registered!</string>
+
+
+    <!--Teste-->
+    <string-array translatable="false" name="fonetic">
+        <item>Alpha</item>
+        <item>Bravo</item>
+        <item>Charlie</item>
+        <item>Delta</item>
+        <item>Echo</item>
+    </string-array>
 </resources>

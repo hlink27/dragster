@@ -1,7 +1,12 @@
 package com.teste.estudo.DAO;
 
+import android.database.sqlite.SQLiteDatabase;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.*;
 import com.teste.estudo.entidades.User;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
@@ -12,13 +17,10 @@ public interface UserDAO {
     @Query("SELECT * FROM user WHERE nome = :username AND senha = :password")
     public User[] validateLogin(String username, String password);
 
-    //@Delete
-    //List<Long> deleteAll(User... users);
+    @Query("SELECT * FROM user")
+    List<User> getAll();
 
-    //@Query("SELECT * FROM user WHERE nome = :username AND admin = :admin")
-    //public User[] validateAdmin(String username, boolean admin);
+    @Query("SELECT nome FROM user")
+    List<String> getAllNome();
 
-    /*Admin Check
-    @Query("SELECT * FROM user WHERE nome = :username AND :admin")
-    public User[] validateAdmin(String username, boolean admin);*/
 }

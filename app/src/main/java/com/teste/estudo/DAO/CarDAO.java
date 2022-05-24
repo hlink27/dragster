@@ -8,4 +8,6 @@ import java.util.List;
 public interface CarDAO {
     @Insert
     List<Long> insertAll(Car... cars);
+
+
 }

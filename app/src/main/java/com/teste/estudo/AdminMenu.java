@@ -31,5 +31,13 @@ public class AdminMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        vehicleAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminMenu.this, AdminCreateCar.class);
+                startActivity(intent);
+            }
+        });
     }
 }

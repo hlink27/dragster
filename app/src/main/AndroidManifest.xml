@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".AdminCreateCar"
+            android:exported="false" />
+        <activity
             android:name=".AdminCreateAcc"
             android:exported="false" />
         <activity

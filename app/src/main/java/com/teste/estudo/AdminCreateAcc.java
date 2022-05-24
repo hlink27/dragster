@@ -64,13 +64,6 @@ public class AdminCreateAcc extends AppCompatActivity implements AdapterView.OnI
                                 user1.nome = user_name;
                                 user1.email = e_mail;
                                 user1.senha = pass_word;
-                                if(text == "NORMAL"){
-                                    user1.tipoUser = User.TipoUser.NORMAL;
-                                } else if(text == "FIDELIZADO") {
-                                    user1.tipoUser = User.TipoUser.FIDELIZADO;
-                                } else if(text == "ADMIN"){
-                                    user1.tipoUser = User.TipoUser.ADMIN;
-                                }
                                 UserDAO userDAO = banco.userDAO();
                                 userDAO.insertAll(user1);
                                 Toast.makeText(AdminCreateAcc.this, getText(R.string.accountCreated), Toast.LENGTH_SHORT).show();

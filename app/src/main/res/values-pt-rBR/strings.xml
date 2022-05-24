@@ -41,4 +41,10 @@
     <string name="vehicleAdd">Adicionar Veículo</string>
     <string name="vehicleEdit">Editar Veículo</string>
     <string name="seeRepair">Ver Agendamentos</string>
+    <string name="crtCar">Registrar Veículo</string>
+    <string name="brand">Marca</string>
+    <string name="model">Modelo</string>
+    <string name="year">Ano</string>
+    <string name="licensePlate">Placa</string>
+    <string name="carCreated">Veículo Registrado!</string>
 </resources>

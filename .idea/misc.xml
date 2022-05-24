@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/drawable/user.xml" value="0.3595" />
         <entry key="app/src/main/res/drawable/whatsapp.xml" value="0.2295" />
         <entry key="app/src/main/res/layout/activity_admin_create_acc.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/activity_admin_create_car.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_admin_menu.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.35833333333333334" />
