@@ -20,13 +20,14 @@ import com.teste.estudo.utils.BancoDeDados;
 
 import java.util.ArrayList;
 
-public class AdminCreateCar extends AppCompatActivity {
+public class AdminCreateCar extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     EditText marca, modelo, ano, placa;
     Button btnCrtCar;
     BancoDeDados banco;
     Car car1 = new Car();
     Spinner spinner;
+    String text;
 
 
     @Override
@@ -34,7 +35,7 @@ public class AdminCreateCar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_create_car);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Disable Landscape Mode
-
+        banco = Room.databaseBuilder(getApplicationContext(),BancoDeDados.class,"BancoTeste").allowMainThreadQueries().build();
         marca = findViewById(R.id.marca);
         modelo = findViewById(R.id.modelo);
         ano = findViewById(R.id.ano);
@@ -64,7 +65,19 @@ public class AdminCreateCar extends AppCompatActivity {
                 CarDAO carDAO = banco.carDAO();
                 carDAO.insertAll(car1);
                 Toast.makeText(AdminCreateCar.this, getText(R.string.carCreated), Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        String text = adapterView.getItemAtPosition(i).toString();
+        car1.dono = text;
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

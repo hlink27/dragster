@@ -16,4 +16,6 @@ public class Schedule {
     public String description;
     @ColumnInfo
     public String user;
+    @ColumnInfo
+    public boolean promocao;
 }

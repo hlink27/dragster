@@ -39,6 +39,7 @@
     <string name="dateSelect">Select Date</string>
     <string name="hourSelect">Select Time</string>
     <string name="scheduleTextHint">Describe your vehicle\'s problem</string>
+    <string name="scheduleComplete">Scheduled!</string>
 
     <!--ADM Menu-->
     <string name="admCreateAcc">Creacte Account</string>
@@ -60,14 +61,5 @@
     <string name="year">Year</string>
     <string name="licensePlate">License Plate</string>
     <string name="carCreated">Vehicle Registered!</string>
-
-
-    <!--Teste-->
-    <string-array translatable="false" name="fonetic">
-        <item>Alpha</item>
-        <item>Bravo</item>
-        <item>Charlie</item>
-        <item>Delta</item>
-        <item>Echo</item>
-    </string-array>
+    <string name="owner">Owner:</string>
 </resources>

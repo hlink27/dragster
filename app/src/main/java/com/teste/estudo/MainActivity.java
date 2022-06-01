@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                         //usernameShow.setText(loginUsername);
                         Intent intent = new Intent(MainActivity.this, MainMenu.class);
                         startActivity(intent);
-                        finish();
                     } else {
                         Toast.makeText(MainActivity.this, getText(R.string.incorrectInput), Toast.LENGTH_SHORT).show();
                     }

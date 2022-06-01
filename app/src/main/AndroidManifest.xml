@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/dragster_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/dragster_launcher_round"
+        android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
@@ -28,9 +28,6 @@
             android:name=".EditActivity"
             android:exported="false" />
         <activity
-            android:name=".MainAdminConfig"
-            android:exported="false" />
-        <activity
             android:name=".ContactActivity"
             android:exported="false" />
         <activity
@@ -42,14 +39,6 @@
         <activity
             android:name=".MainMenu"
             android:exported="false">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
         </activity>
         <activity
             android:name=".MainActivity"

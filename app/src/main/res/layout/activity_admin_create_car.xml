@@ -15,6 +15,8 @@
         android:background="@color/primary_900"
         android:text="@string/crtCar"
         android:textColor="@color/white"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -86,13 +88,20 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"/>
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/owner" />
+
         <Spinner
             android:id="@+id/spinnerCrtCar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
-            android:entries="@array/fonetic" />
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btnCrtCar"
