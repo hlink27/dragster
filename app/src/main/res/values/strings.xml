@@ -42,7 +42,7 @@
     <string name="scheduleComplete">Scheduled!</string>
 
     <!--ADM Menu-->
-    <string name="admCreateAcc">Creacte Account</string>
+    <string name="users">Users</string>
     <!--Spinner-->
     <string-array name="tipoUser">
         <item>NORMAL</item>

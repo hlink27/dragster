@@ -53,6 +53,7 @@ public class ScheduleActivity extends AppCompatActivity {
                 if (Sessao.getInstance().getUserLogado().stamps == 10){
                     schedule.promocao = true;
                     //zerar selos do usuário
+
                 } else {
                     schedule.promocao = false;
                     //adicionar mais um sela a coleção do usuario

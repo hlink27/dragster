@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class AdminMenu extends AppCompatActivity {
 
-    Button admCreateAcc, admEditAcc, vehicleAdd, vehicleEdit, seeRepair;
+    Button admUsers, admCar, seeRepair;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,25 +18,23 @@ public class AdminMenu extends AppCompatActivity {
         setContentView(R.layout.activity_admin_menu);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Disable Landscape Mode
 
-        admCreateAcc = findViewById(R.id.admCreateAcc);
-        admEditAcc = findViewById(R.id.admEditAcc);
-        vehicleAdd = findViewById(R.id.vehicleAdd);
-        vehicleEdit = findViewById(R.id.vehicleEdit);
+        admUsers = findViewById(R.id.admUsers);
+        admCar = findViewById(R.id.addCar);
         seeRepair = findViewById(R.id.seeRepair);
 
-        admCreateAcc.setOnClickListener(new View.OnClickListener() {
+        admUsers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminMenu.this, AdminCreateAcc.class);
+                Intent intent = new Intent(AdminMenu.this, AdminViewUser.class);
                 startActivity(intent);
             }
         });
-
-        vehicleAdd.setOnClickListener(new View.OnClickListener() {
+        admCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminMenu.this, AdminCreateCar.class);
+                Intent intent = new Intent(AdminMenu.this, AdmViewVehicle.class);
                 startActivity(intent);
+
             }
         });
     }

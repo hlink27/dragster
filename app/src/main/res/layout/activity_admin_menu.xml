@@ -19,32 +19,18 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/admCreateAcc"
-            android:layout_width="wrap_content"
+            android:id="@+id/admUsers"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/admCreateAcc" />
+            android:drawableTop="@drawable/person"
+            android:text="@string/users" />
 
         <Button
-            android:id="@+id/admEditAcc"
-            android:layout_width="wrap_content"
+            android:id="@+id/addCar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/admEditAcc" />
-
-        <Button
-            android:id="@+id/vehicleAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/vehicleAdd" />
-
-        <Button
-            android:id="@+id/vehicleEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/vehicleEdit" />
+            android:drawableTop="@drawable/car"
+            android:text="@string/vehicle" />
 
         <Button
             android:id="@+id/seeRepair"
