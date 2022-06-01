@@ -37,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="11dp"
+            android:drawableTop="@drawable/clock2"
             android:text="@string/seeRepair" />
 
     </LinearLayout>
