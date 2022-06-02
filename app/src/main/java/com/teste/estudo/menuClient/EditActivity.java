@@ -1,8 +1,10 @@
-package com.teste.estudo;
+package com.teste.estudo.menuClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.teste.estudo.R;
 
 public class EditActivity extends AppCompatActivity {
 

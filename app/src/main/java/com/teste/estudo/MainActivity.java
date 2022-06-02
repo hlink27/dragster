@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import com.teste.estudo.DAO.UserDAO;
 import com.teste.estudo.entidades.User;
+import com.teste.estudo.menuClient.CreateAccount;
+import com.teste.estudo.menuClient.MainMenu;
 import com.teste.estudo.utils.BancoDeDados;
 import com.teste.estudo.utils.Sessao;
 

@@ -1,22 +1,20 @@
-package com.teste.estudo;
+package com.teste.estudo.menuClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.teste.estudo.DAO.ScheduleDAO;
+import com.teste.estudo.R;
 import com.teste.estudo.entidades.Schedule;
+import com.teste.estudo.entidades.User;
 import com.teste.estudo.utils.BancoDeDados;
 import com.teste.estudo.utils.Sessao;
 
@@ -52,11 +50,11 @@ public class ScheduleActivity extends AppCompatActivity {
                 schedule.user = Sessao.getInstance().getUserLogado().nome;
                 if (Sessao.getInstance().getUserLogado().stamps == 10){
                     schedule.promocao = true;
-                    //zerar selos do usuário
+                    //Sessao.getInstance().getUserLogado().stamps = 0;
 
                 } else {
                     schedule.promocao = false;
-                    //adicionar mais um sela a coleção do usuario
+                    //Sessao.getInstance().getUserLogado().stamps += 1;
                 }
                 ScheduleDAO scheduledao = banco.scheduleDAO();
                 scheduledao.insertAll(schedule);

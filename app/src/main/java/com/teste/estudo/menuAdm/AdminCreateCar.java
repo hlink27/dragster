@@ -1,4 +1,4 @@
-package com.teste.estudo;
+package com.teste.estudo.menuAdm;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
@@ -13,8 +13,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationBarView;
 import com.teste.estudo.DAO.CarDAO;
 import com.teste.estudo.DAO.UserDAO;
+import com.teste.estudo.R;
 import com.teste.estudo.entidades.Car;
 import com.teste.estudo.utils.BancoDeDados;
 
@@ -48,6 +50,7 @@ public class AdminCreateCar extends AppCompatActivity implements AdapterView.OnI
         spinnerAdapter.setDropDownViewResource(R.layout.spinner_dropsown_layout);
         spinnerAdapter.addAll(userDAO.getAllNome());
         spinnerAdapter.notifyDataSetChanged();
+        spinner.setOnItemSelectedListener(this);
         spinner.setAdapter(spinnerAdapter);
 
         btnCrtCar.setOnClickListener(new View.OnClickListener() {

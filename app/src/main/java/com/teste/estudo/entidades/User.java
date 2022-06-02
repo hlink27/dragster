@@ -2,6 +2,8 @@ package com.teste.estudo.entidades;
 
 import androidx.room.*;
 
+import java.util.ArrayList;
+
 @Entity(tableName = "user")
 public class User {
     @PrimaryKey(autoGenerate = true)
@@ -23,5 +25,9 @@ public class User {
         private TipoUser(int valor){
             this.valor = valor;
         }
+    }
+
+    public int getId() {
+        return id;
     }
 }

@@ -1,4 +1,4 @@
-package com.teste.estudo;
+package com.teste.estudo.menuClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.teste.estudo.R;
 
 public class ContactActivity extends AppCompatActivity {
 

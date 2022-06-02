@@ -1,20 +1,17 @@
-package com.teste.estudo;
+package com.teste.estudo.menuClient;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.teste.estudo.DAO.UserDAO;
+import com.teste.estudo.R;
 import com.teste.estudo.entidades.User;
+import com.teste.estudo.menuAdm.AdminMenu;
 import com.teste.estudo.utils.BancoDeDados;
 import com.teste.estudo.utils.Sessao;
 
@@ -92,7 +89,7 @@ public class MainMenu extends AppCompatActivity {
         admBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainMenu.this,AdminMenu.class);
+                Intent intent = new Intent(MainMenu.this, AdminMenu.class);
                 startActivity(intent);
             }
         });

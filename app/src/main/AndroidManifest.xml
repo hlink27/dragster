@@ -10,40 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
-            android:name=".AdmViewVehicle"
+            android:name=".menuAdm.AdminViewSchedule"
             android:exported="false" />
         <activity
-            android:name=".AdminViewUser"
+            android:name=".menuAdm.AdmViewVehicle"
             android:exported="false" />
         <activity
-            android:name=".AdminCreateCar"
+            android:name=".menuAdm.AdminViewUser"
             android:exported="false" />
         <activity
-            android:name=".AdminCreateAcc"
+            android:name=".menuAdm.AdminCreateCar"
             android:exported="false" />
         <activity
-            android:name=".AdminMenu"
+            android:name=".menuAdm.AdminCreateAcc"
             android:exported="false" />
         <activity
-            android:name=".ScheduleActivity"
+            android:name=".menuAdm.AdminMenu"
             android:exported="false" />
         <activity
-            android:name=".StampsActivity"
+            android:name=".menuClient.ScheduleActivity"
             android:exported="false" />
         <activity
-            android:name=".EditActivity"
+            android:name=".menuClient.StampsActivity"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity"
+            android:name=".menuClient.EditActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewCar"
+            android:name=".menuClient.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateAccount"
+            android:name=".menuClient.ViewCar"
             android:exported="false" />
         <activity
-            android:name=".MainMenu"
+            android:name=".menuClient.CreateAccount"
+            android:exported="false" />
+        <activity
+            android:name=".menuClient.MainMenu"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

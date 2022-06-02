@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context=".AdminViewUser">
+    tools:context=".menuAdm.AdminViewUser">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewUser"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"

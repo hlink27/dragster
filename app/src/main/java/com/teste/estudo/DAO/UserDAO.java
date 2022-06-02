@@ -23,4 +23,9 @@ public interface UserDAO {
     @Query("SELECT nome FROM user")
     List<String> getAllNome();
 
+    @Query("DELETE FROM user WHERE id = :id")
+    void deleteUser(int id);
+
+
+
 }
