@@ -28,4 +28,7 @@ public interface UserDAO {
 
     @Query("UPDATE user SET senha = :senha WHERE nome = :nome")
     void updateSenha(String senha, String nome);
+
+    @Query("UPDATE user SET tipoUser = :tipoUser WHERE nome = :nome")
+    void updateLevel(String tipoUser, String nome);
 }

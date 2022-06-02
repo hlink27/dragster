@@ -39,6 +39,7 @@ public class AdminViewUserAdapter extends RecyclerView.Adapter<AdminViewUserAdap
     public void onBindViewHolder(@NonNull ItemLista ItemLista, @SuppressLint("RecyclerView") int position) {
         ItemLista.setUsername(user.get(position).nome);
         ItemLista.setEmail(user.get(position).email);
+        ItemLista.setLvlUser(String.valueOf(user.get(position).tipoUser));
         ItemLista.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,15 +60,17 @@ public class AdminViewUserAdapter extends RecyclerView.Adapter<AdminViewUserAdap
     }
 
     public static class ItemLista extends RecyclerView.ViewHolder{
-        TextView username, email, btnDelete;
+        TextView username, email, btnDelete, lvlUser;
 
         public ItemLista(View itemXML) {
             super(itemXML);
             username = itemXML.findViewById(R.id.username_recycle);
             email = itemXML.findViewById(R.id.email_recycle);
             btnDelete = itemXML.findViewById(R.id.btnDeleteUser);
+            lvlUser = itemXML.findViewById(R.id.lvlUser);
         }
         public void setUsername(String username) { this.username.setText(username); }
         public void setEmail(String email) { this.email.setText(email);}
+        public void setLvlUser(String lvlUser) { this.lvlUser.setText(lvlUser);}
     }
 }

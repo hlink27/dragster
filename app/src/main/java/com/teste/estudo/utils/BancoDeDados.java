@@ -10,7 +10,7 @@ import com.teste.estudo.entidades.Car;
 import com.teste.estudo.entidades.Schedule;
 import com.teste.estudo.entidades.User;
 
-@Database(entities = {User.class, Car.class, Schedule.class}, version= 10)
+@Database(entities = {User.class, Car.class, Schedule.class}, version= 11)
 public abstract class BancoDeDados extends RoomDatabase {
     public abstract UserDAO userDAO();
     public abstract CarDAO carDAO();

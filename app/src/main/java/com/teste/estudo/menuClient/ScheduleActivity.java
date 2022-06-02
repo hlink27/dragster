@@ -47,6 +47,7 @@ public class ScheduleActivity extends AppCompatActivity {
                 schedule.date = date;
                 schedule.time = time;
                 schedule.description = text;
+                schedule.tipoUser = Sessao.getInstance().userLogado.tipoUser;
                 schedule.user = Sessao.getInstance().getUserLogado().nome;
                 if (Sessao.getInstance().getUserLogado().stamps == 10){
                     schedule.promocao = true;

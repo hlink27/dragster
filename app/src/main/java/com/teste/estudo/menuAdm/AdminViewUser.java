@@ -20,7 +20,7 @@ import com.teste.estudo.utils.BancoDeDados;
 
 public class AdminViewUser extends AppCompatActivity{
 
-    FloatingActionButton addUser;
+    FloatingActionButton addUser, editUserLvl;
     RecyclerView lista;
     BancoDeDados banco;
     TextView btnDeleteUser;
@@ -36,6 +36,7 @@ public class AdminViewUser extends AppCompatActivity{
         addUser = findViewById(R.id.addUser);
         lista = findViewById(R.id.recyclerViewUser);
         btnDeleteUser = findViewById(R.id.btnDeleteUser);
+        editUserLvl = findViewById(R.id.editUserLvl);
 
         lista.setLayoutManager(new LinearLayoutManager(this));
         lista.setAdapter(new AdminViewUserAdapter(this, userdao.getAll()));
@@ -44,6 +45,13 @@ public class AdminViewUser extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AdminViewUser.this, AdminCreateAcc.class);
+                startActivity(intent);
+            }
+        });
+        editUserLvl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminViewUser.this, AdminEditUserLvl.class);
                 startActivity(intent);
             }
         });

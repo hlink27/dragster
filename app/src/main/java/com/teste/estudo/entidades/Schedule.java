@@ -18,4 +18,14 @@ public class Schedule {
     public String user;
     @ColumnInfo
     public boolean promocao;
+    @ColumnInfo
+    public User.TipoUser tipoUser;
+
+    public enum TipoUser{
+        NORMAL(0), ADMIN(1), FIDELIZADO(2);
+        private int valor;
+        private TipoUser(int valor){
+            this.valor = valor;
+        }
+    }
 }

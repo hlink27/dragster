@@ -41,6 +41,12 @@ public class AdminViewScheduleAdapter extends RecyclerView.Adapter<AdminViewSche
         ItemSchedule.setSchedule_date(schedules.get(position).date);
         ItemSchedule.setSchedule_hour(schedules.get(position).time);
         ItemSchedule.setSchedule_description(schedules.get(position).description);
+        ItemSchedule.setSchedule_userLvl(String.valueOf(schedules.get(position).tipoUser));
+        if(schedules.get(position).promocao){
+            ItemSchedule.setSchedule_promocao("10 SELOS");
+        } else {
+            ItemSchedule.setSchedule_promocao("Sem promoção");
+        }
         ItemSchedule.schedule_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,13 +66,15 @@ public class AdminViewScheduleAdapter extends RecyclerView.Adapter<AdminViewSche
     }
 
     public static class ItemSchedule extends RecyclerView.ViewHolder {
-        TextView schedule_username, schedule_date, schedule_hour, schedule_description, schedule_delete;
+        TextView schedule_username, schedule_date, schedule_hour, schedule_description, schedule_delete, schedule_userLvl, schedule_promocao;
         public ItemSchedule(View itemSchedule){
             super(itemSchedule);
             schedule_username = itemSchedule.findViewById(R.id.schedule_username);
             schedule_date = itemSchedule.findViewById(R.id.schedule_date);
             schedule_hour = itemSchedule.findViewById(R.id.schedule_hour);
             schedule_description = itemSchedule.findViewById(R.id.schedule_description);
+            schedule_userLvl = itemSchedule.findViewById(R.id.schedule_userLvl);
+            schedule_promocao = itemSchedule.findViewById(R.id.schedule_promocao);
             schedule_delete = itemSchedule.findViewById(R.id.schedule_delete);
         }
 
@@ -84,6 +92,15 @@ public class AdminViewScheduleAdapter extends RecyclerView.Adapter<AdminViewSche
 
         public void setSchedule_description(String schedule_description) {
             this.schedule_description.setText(schedule_description);
+        }
+
+        public void setSchedule_userLvl(String schedule_userLvl) {
+            this.schedule_userLvl.setText(schedule_userLvl);
+        }
+
+        public boolean setSchedule_promocao(String schedule_promocao) {
+            this.schedule_promocao.setText(schedule_promocao);
+            return false;
         }
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".menuAdm.AdminEditUserLvl"
+            android:exported="false" />
+        <activity
             android:name=".menuAdm.AdminEditCar"
             android:exported="false" />
         <activity

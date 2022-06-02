@@ -50,13 +50,6 @@ public class AdmViewVehicleAdapter extends RecyclerView.Adapter<AdmViewVehicleAd
                 notifyDataSetChanged();
             }
         });
-        ItemVehicle.editCar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), AdminEditCar.class);
-                view.getContext().startActivity(intent);
-            }
-        });
     }
 
     @Override
@@ -72,7 +65,7 @@ public class AdmViewVehicleAdapter extends RecyclerView.Adapter<AdmViewVehicleAd
             marca = itemxml.findViewById(R.id.marcaRv);
             dono = itemxml.findViewById(R.id.donoRv);
             delCar = itemxml.findViewById(R.id.delCar);
-            editCar = itemxml.findViewById(R.id.editCar);
+            //editCar = itemxml.findViewById(R.id.editCar);
         }
 
         public void setPlaca(String placa) {
