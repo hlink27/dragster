@@ -5,4 +5,4 @@
 </p></br>
 
 ## Descrição
-Aplicativo para android da Oficina Dragster para melhorar sua interação com o cliente, desenvolvido em colobaração com a Faculdade Visconde de Cairu.
+Aplicativo desenvolvido como requisito do Projeto Integrador 5 do curso de Análise e Desenvolvimento de Sistemas da Faculdade Visconde de Cairu em parceria com a empresa Dragster. O objetivo do aplicativo é criar um canal de interação e fidelização dos clientes da oficina Dragster que é referência em Salvador nos quesitos de manutenação preventiva e corretiva.
