@@ -23,6 +23,7 @@
         <entry key="app/src/main/res/layout/activity_admin_create_car.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_admin_menu.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_admin_view_schedule.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/activity_admin_view_schedule_layout.xml" value="0.8621553884711779" />
         <entry key="app/src/main/res/layout/activity_admin_view_user.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.35833333333333334" />
@@ -35,6 +36,7 @@
         <entry key="app/src/main/res/layout/admin_view_user_recycler.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/color_spinner_layout.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/list_stamp.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/schedule_recycle.xml" value="0.1" />
         <entry key="app/src/main/res/layout/simple_spinner_layout.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/spinner_dropsown_layout.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/view_car_item.xml" value="0.35833333333333334" />

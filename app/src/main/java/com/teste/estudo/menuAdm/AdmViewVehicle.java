@@ -34,7 +34,6 @@ public class AdmViewVehicle extends AppCompatActivity {
         recyclerViewVehicle.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewVehicle.setAdapter(new AdmViewVehicleAdapter(this, cardao.getAll()));
 
-
         addVehicle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

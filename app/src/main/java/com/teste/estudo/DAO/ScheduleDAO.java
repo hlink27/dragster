@@ -15,4 +15,7 @@ public interface ScheduleDAO {
 
     @Query("SELECT * FROM schedule")
     List<Schedule> getAll();
+
+    @Query("DELETE FROM schedule WHERE id = :id")
+    void deleteSchedule(int id);
 }

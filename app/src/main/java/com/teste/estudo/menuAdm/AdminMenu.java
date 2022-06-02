@@ -39,5 +39,12 @@ public class AdminMenu extends AppCompatActivity {
 
             }
         });
+        seeRepair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminMenu.this, AdminViewSchedule.class);
+                startActivity(intent);
+            }
+        });
     }
 }
