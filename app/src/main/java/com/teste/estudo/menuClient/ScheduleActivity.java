@@ -51,11 +51,12 @@ public class ScheduleActivity extends AppCompatActivity {
                 schedule.user = Sessao.getInstance().getUserLogado().nome;
                 if (Sessao.getInstance().getUserLogado().stamps == 10){
                     schedule.promocao = true;
-                    //Sessao.getInstance().getUserLogado().stamps = 0;
-
+                    Sessao.getInstance().getUserLogado().stamps = 0;
                 } else {
                     schedule.promocao = false;
-                    //Sessao.getInstance().getUserLogado().stamps += 1;
+                    if(Sessao.getInstance().userLogado.tipoUser != User.TipoUser.FIDELIZADO){
+                        Sessao.getInstance().getUserLogado().stamps += 1;
+                    }
                 }
                 ScheduleDAO scheduledao = banco.scheduleDAO();
                 scheduledao.insertAll(schedule);
