@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudo">
         <activity
+            android:name=".menuAdm.AdminEditCar"
+            android:exported="false" />
+        <activity
             android:name=".menuAdm.AdminViewSchedule"
             android:exported="false" />
         <activity

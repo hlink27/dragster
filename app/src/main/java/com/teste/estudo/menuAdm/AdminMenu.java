@@ -36,7 +36,6 @@ public class AdminMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AdminMenu.this, AdmViewVehicle.class);
                 startActivity(intent);
-
             }
         });
         seeRepair.setOnClickListener(new View.OnClickListener() {

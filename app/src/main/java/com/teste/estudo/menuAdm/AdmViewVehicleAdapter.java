@@ -2,6 +2,7 @@ package com.teste.estudo.menuAdm;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,13 @@ public class AdmViewVehicleAdapter extends RecyclerView.Adapter<AdmViewVehicleAd
                 notifyDataSetChanged();
             }
         });
+        ItemVehicle.editCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), AdminEditCar.class);
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -56,7 +64,7 @@ public class AdmViewVehicleAdapter extends RecyclerView.Adapter<AdmViewVehicleAd
         return car.size();
     }
     public static class ItemVehicle extends RecyclerView.ViewHolder{
-        TextView placa, modelo, marca, dono, delCar;
+        TextView placa, modelo, marca, dono, delCar, editCar;
         public ItemVehicle(View itemxml){
             super(itemxml);
             placa = itemxml.findViewById(R.id.placaRv);
@@ -64,6 +72,7 @@ public class AdmViewVehicleAdapter extends RecyclerView.Adapter<AdmViewVehicleAd
             marca = itemxml.findViewById(R.id.marcaRv);
             dono = itemxml.findViewById(R.id.donoRv);
             delCar = itemxml.findViewById(R.id.delCar);
+            editCar = itemxml.findViewById(R.id.editCar);
         }
 
         public void setPlaca(String placa) {

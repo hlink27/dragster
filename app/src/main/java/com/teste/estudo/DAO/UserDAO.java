@@ -26,6 +26,6 @@ public interface UserDAO {
     @Query("DELETE FROM user WHERE id = :id")
     void deleteUser(int id);
 
-
-
+    @Query("UPDATE user SET senha = :senha WHERE nome = :nome")
+    void updateSenha(String senha, String nome);
 }

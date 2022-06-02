@@ -28,8 +28,12 @@
     <string name="vehicle">Veículos</string>
     <string name="contactUS">Contato</string>
     <string name="stamps">Meus Selos</string>
-    <string name="editProfile">Editar Perfil</string>
+    <string name="editProfile">Trocar Senha</string>
     <string name="config">Administração</string>
+    <string name="oldPassword">Senha Antiga</string>
+    <string name="newPassword">Nova Senha</string>
+    <string name="repeatNewPassword">Repita a Nova Senha</string>
+    <string name="passwordChanged">Senha Alterada!</string>
 
     <string name="dateSelect">Selecione a Data</string>
     <string name="hourSelect">Selecione a Hora</string>
@@ -49,4 +53,5 @@
     <string name="licensePlate">Placa</string>
     <string name="carCreated">Veículo Registrado!</string>
     <string name="owner">Dono:</string>
+    <string name="editCar">Editar Veículo</string>
 </resources>

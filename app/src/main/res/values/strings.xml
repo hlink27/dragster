@@ -32,8 +32,12 @@
     <string name="vehicle">Vehicles</string>
     <string name="contactUS">Contact Us</string>
     <string name="stamps">My Stamps</string>
-    <string name="editProfile">Edit Profile</string>
+    <string name="editProfile">Change Password</string>
     <string name="config">Administration</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="repeatNewPassword">Repeat New Password</string>
+    <string name="passwordChanged">Password Changed!</string>
 
     <!--Schedule-->
     <string name="dateSelect">Select Date</string>
@@ -62,4 +66,5 @@
     <string name="licensePlate">License Plate</string>
     <string name="carCreated">Vehicle Registered!</string>
     <string name="owner">Owner:</string>
+    <string name="editCar">Edit Vehicle</string>
 </resources>
